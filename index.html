@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getränkekarte</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0f0f0f;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card {
+            width: 900px;
+            max-width: 100%;
+            background-color: #1c1c1c;
+            padding: 70px;
+            border-radius: 25px;
+            box-shadow: 0 0 60px rgba(0,0,0,0.8);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3.8rem;
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            font-size: 2.3rem;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #444;
+            padding-bottom: 10px;
+        }
+
+        .drink {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        /* Handy */
+        @media (max-width: 600px) {
+            body {
+                align-items: flex-start;
+            }
+
+            .card {
+                padding: 30px;
+                border-radius: 15px;
+            }
+
+            h1 {
+                font-size: 2.4rem;
+                margin-bottom: 30px;
+            }
+
+            h2 {
+                font-size: 1.6rem;
+                margin-top: 30px;
+            }
+
+            .drink {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>🍻 Getränkekarte</h1>
+
+        <h2>Bier</h2>
+        <div class="drink">Augustina Hell</div>
+
+        <h2>Mischen</h2>
+        <div class="drink">Wodka O</div>
+        <div class="drink">Wodka E</div>
+        <div class="drink">Jacky Cola</div>
+        <div class="drink">Malibu Maracuja</div>
+
+        <h2>Schnaps</h2>
+        <div class="drink">Tequila</div>
+        <div class="drink">Pfeffi</div>
+        <div class="drink">Berentzen</div>
+
+        <h2>Mystische Getränke</h2>
+        <div class="drink">Goaß</div>
+        <div class="drink">Glühwein</div>
+        <div class="drink">Eigene Getränke (5 € / Mittrinken 3 €)</div>
+
+        <h2>Alkoholfrei</h2>
+        <div class="drink">Wasser</div>
+        <div class="drink">Cola</div>
+    </div>
+
+</body>
+</html>
